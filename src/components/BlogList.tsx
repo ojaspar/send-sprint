@@ -5,7 +5,7 @@ const BlogList: React.FC = () => {
    const { posts, selectPost, loadMorePosts, isLoading } = useBlogPost();
     const observer = useRef<IntersectionObserver | null>(null);
 
-    const lastPostElementRef = useCallback((node) => {
+    const lastPostElementRef = useCallback((node: HTMLDivElement | null) => {
         if (observer.current) observer.current.disconnect();
         observer.current = new IntersectionObserver(entries => {
             if (entries[0].isIntersecting) {

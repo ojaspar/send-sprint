@@ -8,7 +8,7 @@ const BlogPost: React.FC = () => {
 
     return (
          <div className="animate-fadeIn">
-            <h2 className="text-2xl font-bold mb-4">{selectedPost.title}</h2>
+            <h2 className="text-2xl font-bold mb-4 capitalize">{selectedPost.title}</h2>
             <p className="text-gray-700">{selectedPost.body}</p>
         </div>
     );

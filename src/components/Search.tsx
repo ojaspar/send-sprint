@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useBlogPost } from '../context/BlogPostContext';
-import useDebounce from '../hooks/useDebounce'
+import useDebounce  from '../hooks/useDebounce'
 const Search: React.FC = () => {
     const { searchPosts } = useBlogPost();
     const [query, setQuery] = useState('');
-    const debouncedQuery = useDebounce(query, 500); // 500ms debounce delay
+    const debouncedQuery = useDebounce(query, 500);
 
     useEffect(() => {
         searchPosts(debouncedQuery);

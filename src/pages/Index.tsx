@@ -10,14 +10,14 @@ const Index: React.FC = () => {
                 <h1 className="text-4xl font-bold text-center text-gray-800">Blog Posts</h1>
             </header>
             <Search />
-            <div className="grid md:grid-cols-3 gap-4 h-[80vh]">
+            <div className="grid md:grid-cols-3 gap-4">
                 <div className="md:col-span-1 p-4 bg-white shadow rounded-lg animate-slideIn">
                     <h2 className="text-2xl font-semibold mb-4">Posts</h2>
                     <div className="h-full">
                         <BlogPostList />
                     </div>
                 </div>
-                <div className="md:col-span-2 p-4 bg-white shadow rounded-lg animate-fadeIn h-full overflow-y-auto md:h-auto md:overflow-auto">
+                <div className="md:col-span-2 p-4 bg-white shadow rounded-lg animate-fadeIn  py-8 md:py-5 overflow-y-auto md:h-auto md:overflow-auto">
                     <BlogPost />
                 </div>
             </div>
